@@ -1,0 +1,67 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.location {
+  font-size: 75px;
+  color: #00204a;
+  padding-top: 10px;
+  line-height: normal;
+}
+.day {
+  font-size: 36px;
+}
+.temperature {
+  font-size: 34px;
+}
+.weatherDescription {
+  font-size: 20px;
+}
+i {
+  color: #fdb44b;
+  font-size: 58px;
+}
+.container {
+  display: grid;
+  position: relative;
+  text-align: center;
+  color: #00204a;
+}
+.row {
+  row-gap: 4em;
+}
+.todays-description {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.search {
+  margin: 0 auto;
+  width: 10%;
+  position: relative;
+  padding-top: 5em;
+}
+.temps {
+  font-size: 32px;
+}
+p {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #ffff;
+  text-align: center;
+  padding-top: 2em;
+  font-weight: 500;
+}
+.website-url {
+  color: #ffff;
+}
+a.github-url {
+  color: #ffff;
+}
+i.fa-solid.fa-cloud-sun {
+  font-size: 62px;
+}
