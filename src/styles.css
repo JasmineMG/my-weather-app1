@@ -21,10 +21,6 @@ video {
 .weatherDescription {
   font-size: 20px;
 }
-i {
-  color: #fdb44b;
-  font-size: 58px;
-}
 .container {
   display: grid;
   position: relative;
@@ -37,12 +33,6 @@ i {
 .todays-description {
   font-size: 22px;
   text-transform: capitalize;
-}
-.search {
-  margin: 0 auto;
-  width: 10%;
-  position: relative;
-  padding-top: 5em;
 }
 .temps {
   font-size: 32px;
@@ -62,6 +52,15 @@ p {
 a.github-url {
   color: #ffff;
 }
-i.fa-solid.fa-cloud-sun {
-  font-size: 62px;
+.search {
+  position: relative;
+  border: none;
+  width: 30%;
+  padding: 20px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
 }
