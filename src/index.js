@@ -72,13 +72,11 @@ iconElement.setAttribute("alt")= response.data.weather[0].description;
 axios.get(apiUrl).then(showWeather);
 }
 
-
 function showCity(event) {
 event.preventDefault();
 let city = searchCity.value;
 let units = "metric";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b5041e1072f4742b00c1dd94e3c50ed7&units=${units}`;
-
 axios.get(apiUrl).then(showWeather);
 }
 
@@ -120,4 +118,25 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature)
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsiusTemperature)
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+
+function displayForecast() {
+let forecastElement = document.querySelector("#forecast");
+let forecastHTML = `<div class= "row">`;
+let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
+days.forEach(function (day) {
+forecastHTML = 
+forecastHTML + 
+`<div class="col-2">
+		<div class="weather-forecast-date">${day}</div>
+		<img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="rain" class="float-left"/>
+		<div class=" weather-forecast-temperatures">
+		<span class= "weather-forecast-temperature-max">--&deg; |</span> 
+		<span class= "weather-forecast-temperature-min"> --&deg;</span> 
+		</div>
+		</div>`;
+});
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;}
+displayForecast();
