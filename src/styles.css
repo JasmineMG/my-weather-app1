@@ -27,15 +27,9 @@ video {
   text-align: center;
   color: #00204a;
 }
-.row {
-  row-gap: 4em;
-}
 .todays-description {
   font-size: 22px;
   text-transform: capitalize;
-}
-.temps {
-  font-size: 32px;
 }
 p {
   position: relative;
