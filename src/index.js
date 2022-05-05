@@ -89,14 +89,6 @@ function showWeather(response) {
 
   getForecast(response.data.coord);
 }
-function showCity(event) {
-  event.preventDefault();
-  let searchCity = document.querySelector("#city-input");
-  searchCity.innerHTML = `${searchCity.value}`;
-  let city = searchCity.value.trim().toLowerCase();
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b5041e1072f4742b00c1dd94e3c50ed7&units=metric`;
-  axios.get(apiUrl).then(showWeather);
-}
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -170,3 +162,15 @@ function changeCity(event) {
   searchEngine.addEventListener("submit", showCity);
   axios.get(apiUrl).then(displayForecast);
 }
+function showCity(event) {
+  event.preventDefault();
+  let searchCity = document.querySelector("#city-input");
+  searchCity.innerHTML = `${searchCity.value}`;
+  let city = searchCity.value.trim().toLowerCase();
+  searchCityName(city);
+}
+function searchCityName(city) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b5041e1072f4742b00c1dd94e3c50ed7&units=metric`;
+  axios.get(apiUrl).then(showWeather);
+}
+searchCityName("Perth");

@@ -11,6 +11,7 @@ video {
   font-weight: 600;
   color: #00204a;
   text-align: center;
+  font-variant: small-caps;
 }
 .day {
   font-size: 28px;
@@ -22,15 +23,12 @@ video {
   font-size: 20px;
 }
 .weather-forecast {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  font-size: 16px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 20px;
 }
 div.weather-forecast-date {
   font-size: 20px;
-}
-div.col {
-  text-align: center;
 }
 .tempsize {
   font-size: 80px;
@@ -45,18 +43,17 @@ div.col {
   padding: 40px 40px;
   color: white;
   background-color: rgba(6, 57, 84, 0.473);
-  font-size: 17px;
   border-radius: 10px;
 }
 .todays-description {
   font-size: 20px;
   text-transform: capitalize;
-  padding-bottom: 3em;
-  padding-top: 1.5em;
+  padding-bottom: 2em;
 }
-.units {
+span.units {
   font-size: 20px;
-  color: #ffff;
+  padding-top: 2em;
+  position: absolute;
 }
 .website-url {
   color: #ffff;
@@ -87,5 +84,12 @@ p {
   color: #ffff;
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
+}
+img.image {
+  position: relative;
+  padding-bottom: 3em;
+}
+div.col {
   text-align: center;
 }
