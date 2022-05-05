@@ -27,22 +27,24 @@
 			<div class="location" id="current-city">Perth</div>
 			<div class="row align-items-start">
 			<div class="col" name="dayone">
-			<h1>Currently <span id="temperature">--</span>
+					<h1>Date and Time</h1>
+					<div class="weather-description" id="desc"> Description </div>
+					<div class="centre-items">
+					<img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="weather-icon" class="image" id="icon" 400/>
+		<span class=tempsize id="temperature">--</span>
 				<span class= "units">
 					<a href="#" id = "celsius-link" class="active">ºC </a> |
-					<a href="#" id = "fahrenheit-link">ºF</a></h1>
-			<h2>Date and Time</h2>
-			<img src="https://ssl.gstatic.com/onebox/weather/64/rain.png" alt="rain" class="float-left" id="icon"/>
-			<br />
+					<a href="#" id = "fahrenheit-link">ºF</a>
+					</div>
 			<div class ="todays-description">
-			<div class="weather-description" id="desc"> Description </div>
-			Humidity: <span class="detailed-weather" id="humidity">--</span>%
-			<br />
-			Wind: <span class="detailed-weather" id="wind">--</span> km/h
+			<div class="row" id="extra">
+            <div class="col-4"><i class="fa-solid fa-temperature-high"></i><br>feels like °<br><span id="feels-like">--</span></div>
+            <div class="col-4"><i class="fa-solid fa-wind"></i><br>Wind<br><span class="detailed-weather" id="wind">--</span><small>km/h</small> </div>
+            <div class="col-4"><i class="fa-solid fa-water"></i><br>Humidity<br><span class="detailed-weather" id="humidity">--</span>%</div>
+          </div>
 			</div>
 			</div>
 			<div class="weather-forecast" id="forecast"></div>
-			</div>
 			</div>
 		 <div class="search">
 			 <form id="search-form">
@@ -56,6 +58,7 @@
 				</div>
 					 </div>
 				</form>
+		 </div>
 		 </div>
 		<p>Created by <a href=" https://github.com/JasmineMG" target="_blank" class="github-url"> Jasmine Graham.</a> Hosted with <a href ="https://www.netlify.com//" target="_blank" class = "website-url">Netlify</a>
 	</p> 

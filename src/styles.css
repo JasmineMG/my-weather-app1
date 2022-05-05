@@ -7,41 +7,56 @@ video {
   left: 0;
 }
 .location {
-  font-size: 75px;
+  font-size: 62px;
+  font-weight: 600;
   color: #00204a;
-  padding-top: 10px;
-  line-height: normal;
+  text-align: center;
 }
 .day {
-  font-size: 36px;
+  font-size: 28px;
 }
 .temperature {
-  font-size: 34px;
+  font-size: 28px;
 }
-.weatherDescription {
+.weather-description {
   font-size: 20px;
 }
-.container {
-  display: grid;
-  position: relative;
+.weather-forecast {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 16px;
+}
+div.weather-forecast-date {
+  font-size: 20px;
+}
+div.col {
   text-align: center;
-  color: #00204a;
+}
+.tempsize {
+  font-size: 80px;
+  text-align: center;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  padding: 40px 40px;
+  color: white;
+  background-color: rgba(6, 57, 84, 0.473);
+  font-size: 17px;
+  border-radius: 10px;
 }
 .todays-description {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: capitalize;
-}
-p {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  color: #ffff;
-  text-align: center;
-  padding-top: 2em;
-  font-weight: 500;
+  padding-bottom: 3em;
+  padding-top: 1.5em;
 }
 .units {
-  font-size: 18px;
+  font-size: 20px;
+  color: #ffff;
 }
 .website-url {
   color: #ffff;
@@ -61,11 +76,16 @@ input.city-input.form-control {
   padding-top: 5em;
   border-radius: 2px;
 }
-div.col-9 {
-  padding-right: 0em;
-}
 .active {
-  color: #00204a;
   cursor: default;
   text-decoration: none;
+  color: #ffff;
+}
+p {
+  position: relative;
+  display: block;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 }
