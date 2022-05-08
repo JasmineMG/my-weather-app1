@@ -86,6 +86,8 @@ function showWeather(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
 
   getForecast(response.data.coord);
 }
